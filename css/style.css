@@ -17,9 +17,25 @@
     height: auto;
     width: auto;
     max-height: 48px;
-    margin-top: 7px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-icon {
+    margin-top: 4px;
+  }
 }
 
 .about-text {
   font-size: 1.3em;
+}
+
+.social-media-icon {
+  display: inline-block;
+  padding-right: 4px;
+  font-size: 20px;
+}
+
+.footer-p {
+  padding-right: 3em;
 }
