@@ -6,6 +6,16 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -18,7 +28,6 @@
     width: auto;
     max-height: 48px;
     margin-top: 8px;
-    margin-left: -300px;
 }
 
 @media screen and (max-width: 600px) {
@@ -39,4 +48,8 @@
 
 .footer-p {
   padding-right: 3em;
+}
+
+.nav-container {
+  padding: 0 1em;
 }
