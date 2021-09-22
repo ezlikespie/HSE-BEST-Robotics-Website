@@ -53,3 +53,9 @@ main {
 .nav-container {
   padding: 0 1em;
 }
+
+#map {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+}
