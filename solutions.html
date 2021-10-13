@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/infinite-slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-  <link href="css/carousel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="blue darken-3" role="navigation">
@@ -37,37 +37,21 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
   <main>
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
-        <br><br>
-        <h1 class="header center blue-text text-darken-3" style="margin-bottom: 1rem">Royals Repurposing Company</h1>
+        <br>
+        <h1 class="header center blue-text text-darken-3">Our Robot</h1>
+
         <div class="row center">
-          <h5 class="header col s12 light" style="margin-bottom: 1em">Hamilton Southeastern High School's 2021 BEST Robotics Team</h5>
+          <model-viewer style="height: 400px; margin: auto" src="models/RingAssembly.glb" alt="A 3D model of the Seconday Manipulator" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
         </div>
-        <div class="row center">
-          <a href="about.html" id="download-button" class="btn-large waves-effect waves-light orange darken-1"><strong>Learn About Us</strong></a>
-          <a href="solutions.html" id="download-button" class="btn-large waves-effect waves-light blue darken-3" style="margin-left: 1em"><strong>See Our Work</strong></a>
-        </div>
-        <br><br>
-        <div class="row center">
-          <h3 class="header col s12 light">Thanks to Our Sponsors:</h3>
-        </div>
-        <div class="row" style="margin-bottom: 6em;">
-          <section class="sponsor-logos slick-carousel">
-            <div class="slick-slide" style="width: 225px"><img alt="Sponsor: CAT" src="images/sponsors/CAT.png"></div>
-            <div class="slick-slide"><img alt="Sponsor: Datum" src="images/sponsors/datum.png"></div>
-            <div class="slick-slide"><img alt="Sponsor: Mann" src="images/sponsors/mann.png"></div>
-            <div class="slick-slide"><img alt="Sponsor: Nexxt" src="images/sponsors/nexxt.jpg"></div>
-            <div class="slick-slide"><img alt="Sponsor: Stanley" src="images/sponsors/stanley.png"></div>
-            <div class="slick-slide"><img alt="Sponsor: T2" src="images/sponsors/T2.jpg"></div>
-            <div class="slick-slide" style="width: 250px"><img alt="Sponsor: Wolfies" src="images/sponsors/wolfies.png"></div>
-          </section>
-        </div>
+
       </div>
     </div>
-
   </main>
+
   <footer class="page-footer blue darken-3">
     <div class="container">
       <div class="row" style="margin-bottom: 0; padding-bottom: 15px;">
@@ -101,43 +85,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script>
-    $(".slick-carousel").slick({
-        speed: 5000,
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        lazyLoad: 'progressive',
-        draggable: false,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        touchMove: false,
-        variableWidth: true,
-        swipeToSlide: false,
-        centerMode: true,
-        focusOnSelect: false,
-        responsive: [
-          {
-            breakpoint: 750,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-            }
-          }
-          ]
-    });
-  </script>
 
-</body>
+  </body>
 </html>
