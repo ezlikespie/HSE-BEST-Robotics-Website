@@ -102,8 +102,9 @@
     function initMap() {
       const uluru = { lat: 39.972321, lng: -85.915619 };
       const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 15,
         center: uluru,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
       });
       const marker = new google.maps.Marker({
         position: uluru,
@@ -115,6 +116,16 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8oCobCtI7sCNtoKS5Dx-JrO7CJJ70YiM&callback=initMap&libraries=&v=weekly"
       async
   ></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P27Z19M95H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P27Z19M95H');
+  </script>
+  <!-- End Google Analytics -->
 
   </body>
 </html>
