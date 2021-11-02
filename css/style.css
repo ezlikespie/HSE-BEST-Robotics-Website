@@ -72,3 +72,10 @@ main {
   text-align: center;
   line-height: 25px;
 }
+
+.model-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+}
